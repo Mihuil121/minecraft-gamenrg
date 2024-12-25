@@ -1,0 +1,59 @@
+$color : #0000006e;
+$left: 1rem;
+$img : 5rem;
+$fontHover: $left * 1.5;
+$color-hover: #ffd27d;
+
+.cap {
+    color: $color;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(12, 12, 12, 0.5); 
+    backdrop-filter: blur(10px); 
+    z-index: 10; 
+}
+
+
+.cap-content {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    margin: $left;
+}
+
+.line {
+    background-color: rgb(255, 255, 255);
+    border-radius: $left;
+    width: 0.2rem;
+    height: $fontHover*2;
+    margin: $left;
+}
+
+.img-cap {
+    img {
+        width: $img;
+        height: $img;
+    }
+}
+
+.text-cap {
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+
+    .link {
+        text-decoration: none;
+    }
+
+    p {
+        margin-left: $left;
+        transition: 0.5s;
+        color: aliceblue;
+
+        &:hover {
+            cursor: pointer;
+            font-size: $fontHover ;
+            color: $color-hover;
+        }
+    }
+}
