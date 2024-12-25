@@ -8,6 +8,7 @@ import { NextFont } from 'next/dist/compiled/@next/font';
 import useStore from '../../store';
 import { data } from '../data';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 const HRoboto: NextFont = Roboto({
     subsets: ['latin'],
@@ -29,17 +30,7 @@ const icons: IIcons[] = [
 ];
 
 const Bluecard: React.FC = () => {
-    const [isEntering, setIsEntering] = useState<boolean>(true);
     const { curIndex, setCureIndex } = useStore();
-
-    useEffect(() => {
-        setIsEntering(true);
-        const timer: NodeJS.Timeout = setTimeout(() => {
-            setIsEntering(false);
-        }, 500); // Длительность анимации
-
-        return () => clearTimeout(timer);
-    }, [curIndex]);
 
     return (
         <div>
@@ -48,7 +39,7 @@ const Bluecard: React.FC = () => {
                     index === 2 ? (
                         <article className="card2" style={{ background: `${cardData.color}` }} key={index}>
                             <div className="content-card-bac2">
-                                <h2 className={`${HRoboto.className} text ${isEntering ? 'text-enter' : 'text-exit'}`}>
+                                <h2 className={`${HRoboto.className} text-animate`} key={data[curIndex].text}>
                                     {data[curIndex].text}
                                 </h2>
                                 <div className="icons">
@@ -56,20 +47,23 @@ const Bluecard: React.FC = () => {
                                         <div className="icon"
                                             key={iconIndex}
                                             onClick={() => setCureIndex(iconIndex)}
+                                            style={{ cursor: 'pointer' }}
                                         >
                                             {icon.icon}
                                         </div>
                                     ))}
                                 </div>
-                                <p className={`${PRoboto.className} text ${isEntering ? 'text-enter' : 'text-exit'}`}>
+                                <p className={`${PRoboto.className} text-animate`} key={data[curIndex].p}>
                                     {data[curIndex].p}
                                 </p>
                                 <div className="but-card">
-                                    <div className="join">
-                                        <button className={PRoboto.className} >
-                                            Присоеденится
-                                        </button>
-                                    </div>
+                                    <Link href={``}>
+                                        <div className="join">
+                                            <button className={PRoboto.className}>
+                                                Присоединиться
+                                            </button>
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                         </article>

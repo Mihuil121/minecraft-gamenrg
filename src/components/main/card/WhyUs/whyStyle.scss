@@ -1,0 +1,40 @@
+@mixin F-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+$r:20rem;
+
+.Why {
+    @include F-display();
+}
+
+.why-blok {
+    background-color: #7070701f;
+    border-radius: 2rem;
+    width: 65rem;
+    height: $r;
+}
+
+.content-why {
+    @include F-display();
+
+    img {
+        width: $r;
+        height: $r;
+    }
+
+    .content-rext-why {
+        color: rgb(255, 255, 255);
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            width: 35vw;
+        }
+    }
+}

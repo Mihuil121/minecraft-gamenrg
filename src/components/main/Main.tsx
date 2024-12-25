@@ -4,6 +4,10 @@ import './main.scss'
 import { Roboto } from "next/font/google"
 import { NextFont } from "next/dist/compiled/@next/font"
 import Card from "./card/Card"
+import About from "./ about/About"
+import Why from "./card/WhyUs/Why"
+import Icons from "./icons/Icons"
+import Participants from './participants/Participants'
 
 const HRoboto: NextFont = Roboto({
     subsets: ['latin'],
@@ -36,6 +40,10 @@ const Main: React.FC = () => {
                     </figure>
                 </section>
                 <Card />
+                <About />
+                <Why />
+                <Icons />
+                <Participants />
             </main>
         </div>
 

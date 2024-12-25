@@ -1,7 +1,7 @@
 @mixin flex-display {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 $rem: 3rem;
@@ -9,109 +9,120 @@ $with: 50rem;
 $height: 30vh;
 $height2: 65vh;
 
+@keyframes textAnimate {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+.text-animate {
+  animation: textAnimate 0.5s ease-out forwards;
+  will-change: transform, opacity;
+}
 
 .card-form {
-    @include flex-display();
-    color: aliceblue;
-    margin: 2rem;
-    margin-top: -7.8rem;
+  @include flex-display();
+  color: aliceblue;
+  margin: 2rem;
+  margin-top: -9.5rem;
 }
-
 
 .card {
-    width: $with ;
-    height: $height;
-    margin-bottom: $rem;
-    margin-right: $rem;
-    border-radius: 1.5rem;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  width: $with;
+  height: $height;
+  margin-bottom: $rem;
+  margin-right: $rem;
+  border-radius: 1.5rem;
+  background-size: contain; 
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.content-card-bac {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: $height;
-    margin-left: $rem;
 
-    p {
-        width: 30rem;
-    }
+.content-card-bac {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: $height;
+  margin-left: $rem;
+
+  p {
+    width: 30rem;
+  }
 }
 
 .card2 {
-    width: $with ;
-    height: $height2;
-    margin-bottom: $rem;
-    margin-right: $rem;
-    border-radius: 1.5rem;
+  width: $with;
+  height: $height2;
+  margin-bottom: $rem;
+  margin-right: $rem;
+  border-radius: 1.5rem;
 }
 
 .content-card-bac2 {
-    display: flex;
-    flex-direction: column;
-    height: $height2;
-    margin-left: $rem;
+  display: flex;
+  flex-direction: column;
+  height: $height2;
+  margin-left: $rem;
 
-    h2 {
-        margin-top: $rem;
-        margin-bottom: $rem;
-    }
+  h2 {
+    margin-top: $rem;
+    margin-bottom: $rem;
+  }
 
-    p {
-        width: 45rem;
-    }
-
-   
-    
+  p {
+    width: 45rem;
+  }
 }
 
 .icons {
-    @include flex-display();
-    width: 20rem;
+  @include flex-display();
+  width: 20rem;
 
-    .icon {
-        border: 1px solid #FFF;
-        width: 5rem;
-        height: 5rem;
-        display: flex;
-        font-size: $rem - 1;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20%;
-        margin-left: $rem - 1;
-        transition: 0.5s;
-        margin-bottom: $rem;
+  .icon {
+    border: 1px solid #FFF;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    font-size: $rem - 1;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    margin-left: $rem - 1;
+    transition: 0.5s;
+    margin-bottom: $rem;
 
-        &:hover {
-            background-color: #9886ff;
-        }
+    &:hover {
+      background-color: #9886ff;
     }
+  }
 
-    svg {
-        font-size: 1.5rem;
-    }
+  svg {
+    font-size: 1.5rem;
+  }
 }
 
 .join {
-    button {
-        background: transparent;
-        border: 1px solid #FFF;
-        color: #ffffff;
-        cursor: pointer;
-        width: 10rem;
-        height: 2rem;
-        transition: 0.3s;
-        border-radius: 1rem;
-        margin-top: $rem - 1;
+  button {
+    background: transparent;
+    border: 1px solid #FFF;
+    color: #ffffff;
+    cursor: pointer;
+    width: 10rem;
+    height: 2rem;
+    transition: 0.3s;
+    border-radius: 1rem;
+    margin-top: $rem - 1;
 
-        &:hover {
-            background: rgba(255, 255, 255, 0.1);
-            width: 10.5rem;
-        }
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+      width: 10.5rem;
     }
+  }
 }

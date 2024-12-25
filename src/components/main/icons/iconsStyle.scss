@@ -1,0 +1,79 @@
+@mixin F-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+$s: 2rem;
+$img: 20rem;
+
+.Icons-d {
+    @include F-display();
+}
+
+.icon-content {
+    @include F-display();
+    height: 12rem;
+
+    svg {
+        font-size: $s;
+        margin-right: $s;
+    }
+}
+
+.content-text {
+    @include F-display();
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        margin-top: -1rem;
+    }
+}
+
+.iconsV {
+    @include F-display();
+    flex-direction: column;
+    margin: $s;
+    background-color: #ffffff00;
+    color: #ffffff;
+    width: $img;
+    height: $img;
+    border-radius: 0rem;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s forwards;
+
+    &:hover {
+        background-color: #664DF8;
+        border-radius: $s;
+    }
+
+    button {
+        background-color: #ffffff00;
+        color: #ffffff;
+        border: #00000000;
+        border-radius: 0rem;
+        font-size: $s - 1;
+        transition: 1s;
+        width: 15rem;
+        height: 1rem;
+
+        &:hover {
+            background-color: #ffffff;
+            color: #000000;
+            border-radius: $s;
+            height: $s;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

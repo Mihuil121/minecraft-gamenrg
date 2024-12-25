@@ -1,0 +1,85 @@
+@mixin F-display {
+    display: flex;
+    justify-content: center;
+
+}
+
+$s: 4rem;
+$r:2rem;
+
+.Participants{
+    @include F-display();
+    align-items: center;
+    flex-direction: column
+}
+
+.article-Participants {
+    @include F-display();
+    align-items: center;
+
+}
+
+.participants-blok {
+    background: rgba(112, 112, 112, 0.1215686275);
+    border-radius: 0.5rem;
+    margin: $r;
+    border: #ffffff00 solid 1px;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 2s forwards;
+
+    &:hover {
+        border: #ffffff 1px solid;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.content-Par {
+    color: #ffffff;
+    @include F-display();
+    flex-direction: column;
+    margin: $r;
+    width: 30rem;
+    height: 20rem;
+
+    img {
+        width: $s;
+        height: $s;
+        border-radius: 50%;
+    }
+
+    h1 {
+        font-size: $r;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    button {
+        @include F-display();
+        align-items: center;
+        background-color: #664DF8;
+        border: 1px none;
+        width: 10rem;
+        border-radius: $r;
+        cursor: pointer;
+        height: 1rem;
+        font-size: 0.8rem;
+        transition: 0.5s;
+        color: #ffffff;
+
+        &:hover {
+            height: 1.5rem;
+            font-size: 1.05rem;
+        }
+    }
+}

@@ -14,11 +14,9 @@ const PRoboto: NextFont = Roboto({
   weight: '300'
 })
 
-
-
 const Card: React.FC = () => {
   return (
-    <div>
+
       <div className="card-form">
         <div className="card-one">
           {card.map((cardData: ICard, index: number) => (
@@ -34,7 +32,6 @@ const Card: React.FC = () => {
         </div>
         <Bluecard />
       </div>
-    </div>
 
   );
 }

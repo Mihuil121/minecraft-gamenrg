@@ -1,0 +1,49 @@
+@mixin column-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+$f: 2rem;
+$height: 50vh;
+
+.about {
+    @include column-display();
+    height: $height;
+    color: aliceblue;
+
+    h1 {
+        font-size: $f;
+    }
+
+    p {
+        width: 50vw;
+    }
+
+    .content {
+        @include column-display();
+        flex-direction: row;
+        text-align: center;
+        margin-top: -6rem;
+
+        .Left {
+            margin-top: -5rem;
+            margin-right: $f;
+            font-size: $f;
+        }
+
+        .Right {
+            margin-top: 5rem;
+            margin-left: $f;
+            font-size: $f;
+        }
+
+        img {
+            width: $f +2;
+            height: $f +2;
+            margin-top: 15rem;
+            margin-left: -5rem;
+        }
+    }
+}
