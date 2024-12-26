@@ -1,25 +1,30 @@
 @mixin F-display {
     display: flex;
     justify-content: center;
+}
 
+@mixin F-space-between {
+    display: flex;
+    justify-content: space-between;
 }
 
 $s: 4rem;
 $r: 2rem;
 
-.Participants {
+.user-participants {
     @include F-display();
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
 }
 
-.article-Participants {
+.user-article {
     @include F-display();
     align-items: center;
-
+    flex-wrap: wrap;
+    margin-top: $s + 3;
 }
 
-.participants-blok {
+.user-block {
     background: rgba(112, 112, 112, 0.1215686275);
     border-radius: 0.5rem;
     margin: $r;
@@ -41,8 +46,7 @@ $r: 2rem;
     }
 }
 
-
-.content-Par {
+.user-content {
     color: #ffffff;
     @include F-display();
     flex-direction: column;
@@ -84,27 +88,8 @@ $r: 2rem;
     }
 }
 
-.FiUser {
-    text-decoration: none;
-}
-.But-Partic {
-    @include F-display();
-    align-items: center;
-    background-color: #664DF8;
-    color: #ffffff;
-    width: 15rem;
-    height: 2rem;
-    border-radius: 0.5rem;
-    border: none 1px;
-    transition: 0.5s;
-    font-size: 1rem;
-    
-    margin-bottom: 2rem;
-
-    &:hover {
-        width: 15.5rem;
-        border: 1px solid #ffffff;
-    }
-
-    
+// Example usage of the F-space-between mixin
+.some-container {
+    @include F-space-between();
+    // Additional styles for this container
 }

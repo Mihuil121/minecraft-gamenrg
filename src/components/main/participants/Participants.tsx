@@ -5,8 +5,9 @@ import './styleP.scss';
 import userStore from './store';
 import { Roboto } from 'next/font/google';
 import { NextFont } from 'next/dist/compiled/@next/font';
+import { FiUser } from "react-icons/fi";
+import Link from 'next/link';
 
-// Загрузка шрифтов на уровне модуля
 const HRoboto: NextFont = Roboto({
     subsets: ['latin'],
     weight: '500'
@@ -30,9 +31,8 @@ const Participants: React.FC = () => {
             <main className="Participants">
                 <article className="article-Participants">
                     {user.slice(0, 3).map((users: IUser, index: number) => (
-                        <div className="participants-blok" 
-                        key={index}
-                        
+                        <div className="participants-blok"
+                            key={index}
                         >
                             <div className="content-Par">
                                 <div className="content-img-Par">
@@ -59,11 +59,14 @@ const Participants: React.FC = () => {
                             </div>
                         </div>
                     ))}
-
                 </article>
-                <button>
-                    Помотреть всех
-                </button>
+                <Link href='/Users' className='FiUser'>
+                    <button className='But-Partic' style={{ cursor: 'pointer' }}>
+                        <p>
+                            Помотреть всех  <FiUser />
+                        </p>
+                    </button>
+                </Link>
             </main>
         </div>
     );
