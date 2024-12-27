@@ -6,6 +6,7 @@ import './cap.scss'
 import gameNRG from '../../img/gameNRG.png'
 import { Roboto } from 'next/font/google'
 import { NextFont } from "next/dist/compiled/@next/font";
+import { GiVerticalBanner } from "react-icons/gi";
 import Link from "next/link";
 
 const textRoboto: NextFont = Roboto({
@@ -31,14 +32,19 @@ const Cap: React.FC = () => {
                                 <IoMdHome /> Главная
                             </p>
                         </Link>
-                        <Link href='/' className="link">
+                        <Link href='/news' className="link">
                             <p className={textRoboto.className}>
                                 <FaNewspaper /> Новости
                             </p>
                         </Link>
-                        <Link href='/' className="link">
+                        <Link href='/Video' className="link">
                             <p className={textRoboto.className}>
                                 <MdVideoLibrary />  Видео
+                            </p>
+                        </Link>
+                        <Link href='/Video' className="link">
+                            <p className={textRoboto.className}>
+                                <GiVerticalBanner />  Кланы
                             </p>
                         </Link>
                     </div>
