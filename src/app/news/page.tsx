@@ -1,20 +1,19 @@
 'use client'
-import { Metadata } from "next";
+
 import dynamic from "next/dynamic"
 import Loading from "@/components/Loading/Liading"
 import { ComponentType } from "react"
-  
-const UserComponent: ComponentType = dynamic(() => import('@/components/User/user'), {
+
+const New: ComponentType = dynamic(() => import('@/components/News/New'), {
     loading: () => <Loading />,
     ssr: false,
 })
-
-const page = () => {
+const News: React.FC = () => {
     return (
         <div>
-            <UserComponent />
+            <New />
         </div>
     )
 }
 
-export default page
+export default News
