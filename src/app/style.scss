@@ -1,0 +1,521 @@
+@media (max-width:1808px) {
+    .content-Par {
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 2rem;
+        width: 20rem !important;
+        height: 20rem;
+    }
+}
+
+@media (max-width: 1684px) {
+    .Participants {
+        background: url('/_next/static/media/121.29f35f42') no-repeat center center;
+        background-size: cover;
+        /* Используйте cover для растяжения изображения */
+        background-attachment: scroll;
+        /* Измените на scroll, если фиксированное поведение вызывает проблемы */
+    }
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        /* Убедитесь, что ширина установлена */
+        margin: 0;
+        overflow-x: hidden;
+        /* Скрыть горизонтальную полосу прокрутки */
+    }
+
+    body {
+        background: url('../img/121') no-repeat center center;
+        background-size: cover;
+        /* Используйте cover для растяжения изображения */
+        background-attachment: fixed;
+        /* Если это необходимо */
+        height: 100vh;
+        /* Высота на 100% высоты окна */
+        margin: 0;
+    }
+
+    .card2 {
+        width: 40rem !important;
+        height: 65vh;
+        margin-bottom: 3rem;
+        margin-right: 3rem;
+        border-radius: 1.5rem;
+    }
+
+    .content-card-bac2 {
+        p {
+            width: 30rem !important;
+        }
+    }
+
+    .card {
+        width: 40rem !important;
+        height: 30vh;
+        margin-bottom: 3rem;
+        margin-right: 3rem;
+        border-radius: 1.5rem;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width:1656px) {
+    .text-main {
+        margin-left: -10rem;
+    }
+}
+
+
+@media (max-width:1398px) {
+    .content-card-bac2 {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-left: 0rem !important;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card2 {
+        width: 35rem !important;
+        height: 65vh;
+        margin-bottom: 3rem;
+        margin-right: 3rem;
+        border-radius: 1.5rem;
+    }
+
+    .icons .icon {
+        border: 1px solid #FFF;
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        font-size: 2rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20%;
+        margin-left: 0rem !important;
+        transition: 0.5s;
+        margin-bottom: 3rem;
+        margin: 2rem;
+    }
+
+    .card {
+        width: 35rem !important;
+    }
+}
+
+@media (max-width:1304px) {
+    .img-content img {
+        width: 25rem;
+        height: 30rem;
+        display: none;
+    }
+
+    .text-main {
+        margin-left: 0rem !important;
+        text-align: center;
+    }
+
+    .content-Par {
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 2rem;
+        width: 15rem !important;
+        height: 25rem !important;
+        align-items: center;
+
+    }
+
+    .card2 {
+        width: 25rem !important;
+    }
+
+    .content-card-bac2 p {
+        width: 20rem !important;
+    }
+
+    .content-card-bac2 h2 {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        font-size: 0.9rem;
+    }
+
+    .card {
+        width: 30rem !important;
+    }
+
+    .content-card-bac p {
+        width: 20rem !important;
+    }
+
+    .content-Par {
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 2rem;
+        width: 10rem !important;
+        height: 25rem !important;
+        align-items: center;
+    }
+
+    .content-Par h1 {
+        font-size: 1rem !important;
+    }
+
+    .card-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        margin: 2rem;
+        margin-top: 2rem;
+        margin-top: -9.5rem;
+        flex-direction: column;
+    }
+
+    .card2 {
+        width: 30rem !important;
+        height: 50vh !important;
+        margin-bottom: 3rem;
+        margin-right: 3rem;
+        border-radius: 1.5rem;
+    }
+
+    .why-blok {
+        background-color: rgba(112, 112, 112, 0.1215686275);
+        border-radius: 2rem;
+        width: 50rem !important;
+        height: 20rem;
+    }
+
+
+}
+
+@media (max-width:836px) {
+    .iconsV {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 2rem;
+        background-color: rgba(255, 255, 255, 0);
+        color: #ffffff;
+        width: 10rem;
+        height: 15rem;
+        border-radius: 0rem;
+        transition: 0.5s;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 0.5s forwards;
+    }
+
+    .iconsV button:hover {
+        background-color: #ffffff;
+        color: #000000;
+        border-radius: 2rem;
+        height: 2rem;
+        font-size: 1.1rem !important;
+    }
+
+    .icon-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 12rem;
+        flex-direction: column;
+    }
+
+    .iconsV button {
+        background-color: rgba(255, 255, 255, 0);
+        color: #ffffff;
+        border: rgba(0, 0, 0, 0);
+        border-radius: 0rem;
+        font-size: 1rem;
+        transition: 1s;
+        width: 10rem !important;
+        height: 1rem;
+    }
+
+    .cap-content {
+        display: flex;
+        align-items: center;
+        height: 5rem;
+        margin: 1rem;
+        justify-content: center;
+    }
+
+    .img-cap img {
+        width: 5rem;
+        height: 5rem;
+        display: none;
+    }
+
+    .line {
+        background-color: rgb(255, 255, 255);
+        border-radius: 1rem;
+        width: 0.2rem;
+        height: 3rem;
+        margin: 1rem;
+        display: none;
+    }
+
+    .article-Participants {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .content-Par {
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 2rem;
+        width: 30rem !important;
+        height: 20rem !important;
+        align-items: center;
+    }
+
+    .card {
+        width: 50rem;
+        height: 30vh;
+        margin-bottom: 3rem;
+        margin-right: 0rem !important;
+        border-radius: 1.5rem;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .text-main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: aliceblue;
+        margin-left: 5rem !important;
+    }
+
+    .card2 {
+        width: 50rem;
+        height: 65vh;
+        margin-bottom: 3rem;
+        margin-right: 0rem !important;
+        border-radius: 1.5rem;
+    }
+}
+
+
+@media (max-width:757px) {
+    .text-main h1 {
+        font-size: 2rem !important;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .mane-A {
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width:682px) {
+    .cap {
+        color: rgba(0, 0, 0, 0.431372549);
+        position: fixed;
+        width: 100%;
+        background-color: rgba(12, 12, 12, 0.5);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        z-index: 10;
+        bottom: 0;
+    }
+
+    .Participants {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 10rem;
+    }
+}
+
+
+@media (max-width:600px) {
+    .content-why .content-rext-why p {
+        width: 65vw !important;
+    }
+
+    .content-why img {
+        width: 10rem !important;
+        height: 10rem !important;
+    }
+
+    .why-blok {
+        background-color: rgba(112, 112, 112, 0.1215686275);
+        border-radius: 2rem;
+        width: 65rem;
+        height: 15rem !important;
+    }
+
+    .iconsV button {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border-radius: 2rem !important;
+        height: 2rem !important;
+        font-size: 1.5rem;
+    }
+
+    .Icons-d {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .icon-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 12rem;
+        flex-direction: row !important;
+    }
+}
+
+@media (max-width:562px) {
+    .content-why img {
+        width: 10rem !important;
+        height: 10rem !important;
+        display: none;
+    }
+
+    .content-Par {
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 2rem;
+        width: 20rem !important;
+        height: 20rem !important;
+        align-items: center;
+    }
+
+    .content-why .content-rext-why {
+        color: rgb(255, 255, 255);
+        margin: 1rem;
+    }
+
+    .content-why .content-rext-why p {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .card2 {
+        width: 30rem !important;
+        height: 60vh !important;
+        margin-bottom: 3rem;
+        margin-right: 3rem;
+        border-radius: 1.5rem;
+    }
+
+    .about p {
+        width: 18rem !important;
+    }
+
+
+}
+
+@media (max-width:424px) {
+    .why-blok {
+        background-color: rgba(112, 112, 112, 0.1215686275);
+        border-radius: 2rem;
+        width: 65rem;
+        height: 20rem !important;
+    }
+
+    .content-why .content-rext-why h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+$color: #0000006e;
+$left: 1rem;
+$img: 5rem;
+$fontHover: $left * 1.5;
+$color-hover: #ffd27d;
+
+@media (max-width: 391px) {
+  .text-main h1 {
+    font-size: 1rem !important;
+    width: 100% !important;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    width: 25rem !important;
+  }
+
+  .content-Par {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem;
+    width: 15rem !important;
+    height: 20rem !important;
+    align-items: center;
+  }
+
+  $text-color: aliceblue; // Цвет текста и иконок
+
+  .text-cap {
+    display: flex;
+    align-items: center;
+  
+    .link {
+      text-decoration: none;
+      position: relative; // Для позиционирования псевдоэлемента
+    }
+  
+    p {
+      margin-left: $left; // Используем вашу переменную
+      transition: 0.5s;
+      color: $text-color; // Цвет текста и иконок
+      visibility: hidden; // Скрыть текст
+  
+      
+     
+    }
+  
+    // Стили для иконок
+    svg {
+      color: $text-color; // Цвет иконок
+      margin-left: $left; // Отступ между иконкой и текстом
+      visibility: visible; // Убедитесь, что иконки видимы
+    }
+  }
+  .text-cap {
+    display: flex;
+    align-items: center;
+    width: 2rem;
+    justify-content: center;
+    font-size: 2rem !important;
+  }  
+  .text-cap .link {
+    text-decoration: none;
+    position: relative;
+    
+    width: 5rem;
+  }
+}

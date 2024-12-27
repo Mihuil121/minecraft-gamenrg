@@ -29,22 +29,26 @@ const Cap: React.FC = () => {
                     <div className="text-cap">
                         <Link href='/' className="link">
                             <p className={textRoboto.className}>
-                                <IoMdHome /> Главная
+                                <IoMdHome />
+                                 Главная
                             </p>
                         </Link>
                         <Link href='/news' className="link">
                             <p className={textRoboto.className}>
-                                <FaNewspaper /> Новости
+                                <FaNewspaper /> 
+                                Новости
                             </p>
                         </Link>
                         <Link href='/Video' className="link">
                             <p className={textRoboto.className}>
-                                <MdVideoLibrary />  Видео
+                                <MdVideoLibrary />  
+                                Видео
                             </p>
                         </Link>
                         <Link href='/Video' className="link">
                             <p className={textRoboto.className}>
-                                <GiVerticalBanner />  Кланы
+                                <GiVerticalBanner /> 
+                                 Кланы
                             </p>
                         </Link>
                     </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Cap from "@/components/Cap/Cap";
+import './style.scss'
 
 export const metadata: Metadata = {
   title: "GameNRG",
