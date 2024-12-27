@@ -1,0 +1,45 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+$w: 40rem;
+$h: 25rem;
+
+.Video {
+    @include flex();
+
+}
+
+.video-content {
+    @include flex();
+    margin-top: 10rem;
+    background-color: rgba(112, 112, 112, 0.1215686275);
+    border-radius: 2rem;
+    width: 50rem;
+
+    .contentImg {
+        width: $w;
+    }
+
+    .content-V {
+        @include flex();
+        color: aliceblue;
+        margin: 2rem;
+        
+    }
+
+    .iframe-v {
+        width: $w;
+        height: $h;
+        border-radius: 2rem;
+    }
+
+    img {
+        width: $w;
+        height: $h;
+        border-radius: 2rem;
+    }
+}

@@ -1,0 +1,36 @@
+@mixin flex-function {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+$r: 20rem;
+$top:10rem;
+
+.item-news {
+    margin-bottom: $top;
+}
+
+.news-item {
+    @include flex-function();
+    color: aliceblue;
+    text-align: center;
+
+    img {
+        width: $r;
+        height: $r;
+        border-radius: 2rem;
+        margin-top: $top;
+    }
+
+    .news-item-content {
+        @include flex-function();
+    }
+
+    p {
+        width: 50rem;
+
+    }
+}
