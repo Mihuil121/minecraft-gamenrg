@@ -17,7 +17,7 @@ $h: 25rem;
     @include flex();
     margin-top: 10rem;
     background-color: rgba(112, 112, 112, 0.1215686275);
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     width: 50rem;
 
     .contentImg {
@@ -34,12 +34,12 @@ $h: 25rem;
     .iframe-v {
         width: $w;
         height: $h;
-        border-radius: 2rem;
+        border-radius: 0.5rem;
     }
 
     img {
         width: $w;
         height: $h;
-        border-radius: 2rem;
+        border-radius: 0.5rem;
     }
 }

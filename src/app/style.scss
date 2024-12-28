@@ -448,6 +448,9 @@ $button-font-size: 1.5rem;
 $icon-content-height: 12rem;
 
 @media (max-width: 600px) {
+    .banners {
+        margin-top: 10rem;
+    }
     .user-block .user-content {
         width: 20rem;
         height: 20rem;
