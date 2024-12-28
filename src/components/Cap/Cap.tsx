@@ -45,7 +45,7 @@ const Cap: React.FC = () => {
                                 Видео
                             </p>
                         </Link>
-                        <Link href='/Video' className="link">
+                        <Link href='/clans' className="link">
                             <p className={textRoboto.className}>
                                 <GiVerticalBanner /> 
                                  Кланы
