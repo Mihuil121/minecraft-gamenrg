@@ -5,7 +5,7 @@ import './aboutStyle.scss'
 import { ImQuotesLeft } from "react-icons/im";
 import { ImQuotesRight } from "react-icons/im";
 import Image from "next/image";
-import NRG from '../../../img/gameNRG.png'
+import NRG from '../../../img/gosnov.png'
 
 const HRoboto: NextFont = Roboto({
   subsets: ['latin'],

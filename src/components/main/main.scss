@@ -1,4 +1,4 @@
-$center :center;
+$center: center;
 $f: flex;
 
 .main-content {
@@ -6,7 +6,6 @@ $f: flex;
     justify-content: $center;
     align-items: $center;
     height: 80vh;
-
 }
 
 .text-main {
@@ -14,6 +13,8 @@ $f: flex;
     align-items: center;
     flex-direction: column;
     color: aliceblue;
+    opacity: 0;
+    animation: slideIn 1s forwards;
 
     h1 {
         font-size: 3rem;
@@ -24,6 +25,17 @@ $f: flex;
         margin-top: -1.5rem;
         margin-left: 2rem;
         color: rgb(88, 88, 88);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 

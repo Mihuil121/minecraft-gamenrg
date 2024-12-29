@@ -22,13 +22,13 @@ const Clan: React.FC = () => {
                 {Clans.map((clan: IClans, index: number) => (
                     <div className="banner-card" key={index}>
                         <Link href={`/${index}`} className="Link-Clans" onClick={() => setCureIndex(index)} style={{cursor:'pointer'}}>
-                            <div className="banner-image">
+                            <div className="banner-image2">
                                 <Image
                                     src={clan.img}
                                     alt={`${clan.img}`}
                                     layout="responsive"
-                                    width={300}
-                                    height={200}
+                                    className="Image-clan-container"
+                                    
                                 />
                             </div>
                             <div className="content-text-Clans">

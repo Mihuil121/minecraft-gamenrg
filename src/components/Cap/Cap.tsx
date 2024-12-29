@@ -3,7 +3,7 @@ import { IoMdHome } from "react-icons/io";
 import { FaNewspaper } from "react-icons/fa6";
 import { MdVideoLibrary } from "react-icons/md";
 import './cap.scss'
-import gameNRG from '../../img/gameNRG.png'
+import gameNRG from '../../img/gosnov.png'
 import { Roboto } from 'next/font/google'
 import { NextFont } from "next/dist/compiled/@next/font";
 import { GiVerticalBanner } from "react-icons/gi";
