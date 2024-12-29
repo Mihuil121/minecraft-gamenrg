@@ -24,7 +24,7 @@ const Ban = () => {
                         <Image
                             src={banner.img}
                             alt={`${banner.img}`}
-                            className="banner-image"
+                            className='banner-image'
                         />
                         <h2 className="banner-title">{banner.title}</h2>
                         <p className="banner-description">{banner.description}</p>

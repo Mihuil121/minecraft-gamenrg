@@ -1,5 +1,5 @@
 import Image from "next/image"
-import mane from '../../img/man2.png'
+import mane from '../../img/Goldy.png'
 import './main.scss'
 import { Roboto } from "next/font/google"
 import { NextFont } from "next/dist/compiled/@next/font"
